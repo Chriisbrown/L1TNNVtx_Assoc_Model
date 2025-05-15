@@ -18,20 +18,14 @@ class L1TNNVtx_Assoc_Model_emulator_v0 : public hls4mlEmulator::Model{
 
         virtual void prepare_input(std::any input)
         {
-            std::cout << "prepare input" << std::endl;
             input_t* input_p = std::any_cast<input_t*>(input);
             for(int i = 0; i < N_INPUT_1_1; ++i){
-                std::cout << input_p[i] << "| | ";
-                _input[i] = std::any_cast<input_t>(input_p[i]);
+               _input[i] = std::any_cast<input_t>(input_p[i]);
             }
-            std::cout << std::endl;
         }
-
-
 
         virtual void predict()
         {
-            std::cout << " predict " << std::endl;
             L1TNNVtx_Assoc_Model_v0(_input, _result);
             
         }
@@ -41,7 +35,6 @@ class L1TNNVtx_Assoc_Model_emulator_v0 : public hls4mlEmulator::Model{
             result_t *result_p = std::any_cast<result_t*>(result);
             for (int i = 0; i < N_LAYER_9; ++i){
                 result_p[i] = _result[i];
-                std::cout << "resutl: " << result_p[i] << std::endl;
             }
         }
 
@@ -49,7 +42,6 @@ class L1TNNVtx_Assoc_Model_emulator_v0 : public hls4mlEmulator::Model{
 
 extern "C" hls4mlEmulator::Model* create_model()
 {
-    std::cout << " model created" << std::endl;
     return new L1TNNVtx_Assoc_Model_emulator_v0;
 }
 
