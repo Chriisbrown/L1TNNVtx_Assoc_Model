@@ -7,7 +7,8 @@
 #include <cstddef>
 #include <cstdio>
 
-namespace hls4ml_L1TNNVtx_Assoc_Model_v0 {
+
+namespace L1TNNVtx_Assoc_Model_v0 {
 
 // hls-fpga-machine-learning insert numbers
 #define N_INPUT_1_1 4
@@ -44,3 +45,4 @@ typedef ap_fixed<18,8> association_final_linear_table_t;
 
 #endif
 }
+

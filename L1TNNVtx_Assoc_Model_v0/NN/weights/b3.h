@@ -6,7 +6,7 @@
 #ifndef B3_H_
 #define B3_H_
 
-namespace hls4ml_L1TNNVtx_Assoc_Model_v0 {
+namespace L1TNNVtx_Assoc_Model_v0 {
 #ifdef __HLS4ML_LOAD_TXT_WEIGHTS__
 bias3_t b3[20];
 #else
@@ -15,4 +15,5 @@ bias3_t b3[20] = {0.000000, 0.359375, 0.375000, 0.046875, 0.000000, 0.015625, 0.
 #endif
 
 #endif
+
 }

@@ -6,7 +6,7 @@
 #ifndef W9_H_
 #define W9_H_
 
-namespace hls4ml_L1TNNVtx_Assoc_Model_v0 {
+namespace L1TNNVtx_Assoc_Model_v0 {
 #ifdef __HLS4ML_LOAD_TXT_WEIGHTS__
 association_final_weight_t w9[20];
 #else
@@ -16,3 +16,4 @@ association_final_weight_t w9[20] = {0.4802047014236450195312500000000, 0.000000
 
 #endif
 }
+

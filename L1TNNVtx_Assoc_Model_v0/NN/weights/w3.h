@@ -6,7 +6,7 @@
 #ifndef W3_H_
 #define W3_H_
 
-namespace hls4ml_L1TNNVtx_Assoc_Model_v0 {
+namespace L1TNNVtx_Assoc_Model_v0 {
 #ifdef __HLS4ML_LOAD_TXT_WEIGHTS__
 weight3_t w3[80];
 #else
@@ -16,3 +16,4 @@ weight3_t w3[80] = {-0.015625, 0.140625, 0.062500, -0.031250, -0.031250, 0.00000
 
 #endif
 }
+

@@ -6,7 +6,7 @@
 #ifndef B2_H_
 #define B2_H_
 
-namespace hls4ml_L1TNNVtx_Assoc_Model_v0 {
+namespace L1TNNVtx_Assoc_Model_v0 {
 #ifdef __HLS4ML_LOAD_TXT_WEIGHTS__
 norm_association_input_bias_t b2[4];
 #else
@@ -16,3 +16,4 @@ norm_association_input_bias_t b2[4] = {0.0000000000000, 0.0000000000000, 0.00000
 
 #endif
 }
+

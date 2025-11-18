@@ -7,7 +7,7 @@
 #include "ap_fixed.h"
 #include "ap_int.h"
 
-using namespace hls4ml_L1TNNVtx_Assoc_Model_v0;
+using namespace L1TNNVtx_Assoc_Model_v0;
 
 class L1TNNVtx_Assoc_Model_emulator_v0 : public hls4mlEmulator::Model{
     private:
@@ -26,7 +26,7 @@ class L1TNNVtx_Assoc_Model_emulator_v0 : public hls4mlEmulator::Model{
 
         virtual void predict()
         {
-            L1TNNVtx_Assoc_Model_v0(_input, _result);
+            L1TNNVtx_Assoc_Model_v0::L1TNNVtx_Assoc_Model_v0(_input, _result);
             
         }
 

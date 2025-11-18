@@ -26,7 +26,7 @@
 #include "weights/b9.h"
 
 
-namespace hls4ml_L1TNNVtx_Assoc_Model_v0 {
+namespace L1TNNVtx_Assoc_Model_v0 {
 // hls-fpga-machine-learning insert layer-config
 // norm_association_input
 struct config2 : nnet::batchnorm_config {
@@ -132,8 +132,6 @@ struct linear_config10 : nnet::activ_config {
     static const unsigned reuse_factor = 1;
     typedef association_final_linear_table_t table_t;
 };
-
-
 
 }
 

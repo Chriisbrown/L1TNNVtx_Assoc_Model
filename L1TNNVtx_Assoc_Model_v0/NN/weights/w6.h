@@ -6,7 +6,7 @@
 #ifndef W6_H_
 #define W6_H_
 
-namespace hls4ml_L1TNNVtx_Assoc_Model_v0 {
+namespace L1TNNVtx_Assoc_Model_v0 {
 #ifdef __HLS4ML_LOAD_TXT_WEIGHTS__
 weight6_t w6[400];
 #else
@@ -15,4 +15,5 @@ weight6_t w6[400] = {-0.031250, 0.000000, -0.015625, 0.093750, 0.000000, 0.00000
 #endif
 
 #endif
+
 }
