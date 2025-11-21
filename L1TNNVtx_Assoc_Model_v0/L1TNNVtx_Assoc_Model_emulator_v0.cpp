@@ -26,7 +26,7 @@ class L1TNNVtx_Assoc_Model_emulator_v0 : public hls4mlEmulator::Model{
 
         virtual void predict()
         {
-            L1TNNVtx_Assoc_Model_v0::L1TNNVtx_Assoc_Model_v0(_input, _result);
+            NNvtx_assoc(_input, _result);
             
         }
 
