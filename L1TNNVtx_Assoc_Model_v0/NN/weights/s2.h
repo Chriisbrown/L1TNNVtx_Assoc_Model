@@ -7,7 +7,9 @@
 #define S2_H_
 
 namespace L1TNNVtx_Assoc_Model_v0 {
-#ifdef __HLS4ML_LOAD_TXT_WEIGHTS__
+
+
+#ifdef __LOAD_TXT_WEIGHTS__
 norm_association_input_scale_t s2[4];
 #else
 norm_association_input_scale_t s2[4] = {0.9995003938675, 0.9995003938675, 0.9995003938675, 0.9995003938675};
@@ -16,4 +18,3 @@ norm_association_input_scale_t s2[4] = {0.9995003938675, 0.9995003938675, 0.9995
 
 #endif
 }
-

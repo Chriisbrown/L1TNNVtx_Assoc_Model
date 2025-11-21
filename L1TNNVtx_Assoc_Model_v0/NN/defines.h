@@ -7,13 +7,17 @@
 #include <cstddef>
 #include <cstdio>
 
-
 namespace L1TNNVtx_Assoc_Model_v0 {
+
 
 // hls-fpga-machine-learning insert numbers
 #define N_INPUT_1_1 4
+#define N_INPUT_1_1 4
+#define N_LAYER_3 20
 #define N_LAYER_3 20
 #define N_LAYER_6 20
+#define N_LAYER_6 20
+#define N_LAYER_9 1
 #define N_LAYER_9 1
 
 
@@ -35,14 +39,13 @@ typedef ap_fixed<8,2> bias6_t;
 typedef ap_uint<1> layer6_index;
 typedef ap_ufixed<8,1,AP_RND_CONV,AP_SAT,0> layer8_t;
 typedef ap_fixed<18,8> association_2_relu_table_t;
-typedef ap_fixed<12,4> layer9_t;
+typedef ap_fixed<7,4> layer9_t;
 typedef ap_fixed<32,1> association_final_weight_t;
 typedef ap_fixed<6,1> association_final_bias_t;
 typedef ap_uint<1> layer9_index;
 typedef ap_fixed<22,9> result_t;
 typedef ap_fixed<18,8> association_final_linear_table_t;
 
-
-#endif
 }
+#endif
 

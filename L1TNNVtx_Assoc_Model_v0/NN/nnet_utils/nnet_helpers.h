@@ -13,7 +13,7 @@
 
 namespace nnet {
 
-#ifdef __HLS4ML_LOAD_TXT_WEIGHTS__
+#ifdef __LOAD_TXT_WEIGHTS__
 
 #ifndef WEIGHTS_DIR
 #define WEIGHTS_DIR "weights"
@@ -161,9 +161,9 @@ template <class srcType, class dstType, size_t SIZE> void convert_data(hls::stre
     }
 }
 
-extern bool trace_enabled;
-extern std::map<std::string, void *> *trace_outputs;
-extern size_t trace_type_size;
+bool trace_enabled = false;
+std::map<std::string, void *> *trace_outputs;
+size_t trace_type_size;
 
 template <class data_T, class save_T> void save_output_array(data_T *data, save_T *ptr, size_t layer_size) {
     for (int i = 0; i < layer_size; i++) {

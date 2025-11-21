@@ -50,8 +50,8 @@ struct config3 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 55;
-    static const unsigned n_nonzeros = 25;
+    static const unsigned n_zeros = 61;
+    static const unsigned n_nonzeros = 19;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef model_default_t accum_t;
@@ -80,8 +80,8 @@ struct config6 : nnet::dense_config {
     static const unsigned io_type = nnet::io_parallel;
     static const unsigned strategy = nnet::latency;
     static const unsigned reuse_factor = 1;
-    static const unsigned n_zeros = 334;
-    static const unsigned n_nonzeros = 66;
+    static const unsigned n_zeros = 333;
+    static const unsigned n_nonzeros = 67;
     static const unsigned multiplier_limit = DIV_ROUNDUP(n_in * n_out, reuse_factor) - n_zeros / reuse_factor;
     static const bool store_weights_in_bram = false;
     typedef model_default_t accum_t;
@@ -132,6 +132,8 @@ struct linear_config10 : nnet::activ_config {
     static const unsigned reuse_factor = 1;
     typedef association_final_linear_table_t table_t;
 };
+
+
 
 }
 
